@@ -1,0 +1,22 @@
+{
+  "name": "chapter-numbering",
+  "version": "1.0.0",
+  "description": "accepts a number and a format and returns a string in the specified format.",
+  "main": "numbering.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafael-kennedy/chapter-numbering.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Rafael Kennedy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafael-kennedy/chapter-numbering/issues"
+  },
+  "homepage": "https://github.com/rafael-kennedy/chapter-numbering#readme"
+}
