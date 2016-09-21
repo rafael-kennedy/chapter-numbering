@@ -1,9 +1,13 @@
 # chapter-numbering
+
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 Use for chapter and section numbering. Handles roman numerals (_Chapter IV_) or consecutive lettering (_Exhibit A_).
 
 To use:
+`npm install chapter-numbering`
 
-`var numbering = require("numbering")`
+`const numbering = require("chapter-numbering")`
 
 The main function accepts a number or array of numbers, and a string describing the format.
 

@@ -3,32 +3,32 @@ U = function (num, str) {
   var replacer = function (match, cg) {
     var n = num.shift()
     if (!n) {
-      return ""
+      return ''
     }
     switch (cg) {
-      case "I":
-      case "R":
+      case 'I':
+      case 'R':
         return U.roman(n)
-        break;
-      case "i":
-      case "r":
+        break
+      case 'i':
+      case 'r':
         return U.roman(n).toLowerCase()
-        break;
-      case "A":
+        break
+      case 'A':
         return U.alpha(n)
-        break;
-      case "a":
+        break
+      case 'a':
         return U.alpha(n).toLowerCase()
-        break;
-      case "#":
-      case "1":
+        break
+      case '#':
+      case '1':
         return n
-        break;
+        break
       default:
 
     }
   }
-  if (typeof num === "number") {
+  if (typeof num === 'number') {
     num = [num]
   }
   if (re.test(str)) {
@@ -37,7 +37,6 @@ U = function (num, str) {
     return str.replace(/([iIRraA\#1])/g, replacer)
   }
 }
-
 
 U.alpha = function (num) {
   num = Number((+num).toFixed(0))
@@ -84,5 +83,4 @@ U.roman = function (num) {
   }
 }
 
-
-module.exports = U;
+module.exports = U
