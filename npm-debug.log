@@ -1,102 +1,29 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/nodejs',
-1 verbose cli   '/usr/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   'chapter-numbering' ]
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'version', 'patch' ]
 2 info using npm@3.10.3
 3 info using node@v6.4.0
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readLocalPackageData
-7 silly fetchPackageMetaData chapter-numbering
-8 silly fetchNamedPackageData chapter-numbering
-9 silly mapToRegistry name chapter-numbering
-10 silly mapToRegistry using default registry
-11 silly mapToRegistry registry https://registry.npmjs.org/
-12 silly mapToRegistry data Result {
-12 silly mapToRegistry   raw: 'chapter-numbering',
-12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   escapedName: 'chapter-numbering',
-12 silly mapToRegistry   name: 'chapter-numbering',
-12 silly mapToRegistry   rawSpec: '',
-12 silly mapToRegistry   spec: 'latest',
-12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npmjs.org/chapter-numbering
-14 verbose request uri https://registry.npmjs.org/chapter-numbering
-15 verbose request no auth needed
-16 info attempt registry request try #1 at 7:13:06 PM
-17 verbose request using bearer token for auth
-18 verbose request id 3f42c8752ed7cb32
-19 http request GET https://registry.npmjs.org/chapter-numbering
-20 http 200 https://registry.npmjs.org/chapter-numbering
-21 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
-21 verbose headers   etag: '"DOF5R317POXSJOP90ALTSUWB4"',
-21 verbose headers   'content-type': 'application/json',
-21 verbose headers   'content-encoding': 'gzip',
-21 verbose headers   'cache-control': 'max-age=300',
-21 verbose headers   'transfer-encoding': 'chunked',
-21 verbose headers   'accept-ranges': 'bytes',
-21 verbose headers   date: 'Wed, 21 Sep 2016 23:13:07 GMT',
-21 verbose headers   via: '1.1 varnish',
-21 verbose headers   connection: 'keep-alive',
-21 verbose headers   'x-served-by': 'cache-ord1731-ORD',
-21 verbose headers   'x-cache': 'MISS',
-21 verbose headers   'x-cache-hits': '0',
-21 verbose headers   'x-timer': 'S1474499586.980428,VS0,VE354',
-21 verbose headers   vary: 'Accept-Encoding' }
-22 silly get cb [ 200,
-22 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
-22 silly get     etag: '"DOF5R317POXSJOP90ALTSUWB4"',
-22 silly get     'content-type': 'application/json',
-22 silly get     'content-encoding': 'gzip',
-22 silly get     'cache-control': 'max-age=300',
-22 silly get     'transfer-encoding': 'chunked',
-22 silly get     'accept-ranges': 'bytes',
-22 silly get     date: 'Wed, 21 Sep 2016 23:13:07 GMT',
-22 silly get     via: '1.1 varnish',
-22 silly get     connection: 'keep-alive',
-22 silly get     'x-served-by': 'cache-ord1731-ORD',
-22 silly get     'x-cache': 'MISS',
-22 silly get     'x-cache-hits': '0',
-22 silly get     'x-timer': 'S1474499586.980428,VS0,VE354',
-22 silly get     vary: 'Accept-Encoding' } ]
-23 verbose get saving chapter-numbering to /home/rafael/.npm/registry.npmjs.org/chapter-numbering/.cache.json
-24 verbose correctMkdir /home/rafael/.npm correctMkdir not in flight; initializing
-25 silly install normalizeTree
-26 silly loadCurrentTree Finishing
-27 silly loadIdealTree Starting
-28 silly install loadIdealTree
-29 silly cloneCurrentTree Starting
-30 silly install cloneCurrentTreeToIdealTree
-31 silly cloneCurrentTree Finishing
-32 silly loadShrinkwrap Starting
-33 silly install loadShrinkwrap
-34 silly loadShrinkwrap Finishing
-35 silly loadAllDepsIntoIdealTree Starting
-36 silly install loadAllDepsIntoIdealTree
-37 silly rollbackFailedOptional Starting
-38 silly rollbackFailedOptional Finishing
-39 silly runTopLevelLifecycles Starting
-40 silly runTopLevelLifecycles Finishing
-41 silly install printInstalled
-42 verbose stack Error: Refusing to install chapter-numbering as a dependency of itself
-42 verbose stack     at checkSelf (/usr/lib/node_modules/npm/lib/install/validate-args.js:53:14)
-42 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
-42 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
-42 verbose stack     at chain (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
-42 verbose stack     at /usr/lib/node_modules/npm/lib/install/validate-args.js:16:5
-42 verbose stack     at /usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
-42 verbose stack     at Array.forEach (native)
-42 verbose stack     at /usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
-42 verbose stack     at Array.forEach (native)
-42 verbose stack     at asyncMap (/usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
-43 verbose cwd /home/rafael/Documents/Minor/chapter-numbering
-44 error Linux 4.4.8-040408-generic
-45 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "chapter-numbering"
-46 error node v6.4.0
-47 error npm  v3.10.3
-48 error code ENOSELF
-49 error Refusing to install chapter-numbering as a dependency of itself
-50 error If you need help, you may report this error at:
-50 error     <https://github.com/npm/npm/issues>
-51 verbose exit [ 1, true ]
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack D npm-debug.log
+5 verbose stack M numbering.js
+5 verbose stack     at /usr/lib/node_modules/npm/lib/version.js:247:19
+5 verbose stack     at /usr/lib/node_modules/npm/lib/utils/no-progress-while-running.js:21:8
+5 verbose stack     at ChildProcess.exithandler (child_process.js:197:7)
+5 verbose stack     at emitTwo (events.js:106:13)
+5 verbose stack     at ChildProcess.emit (events.js:191:7)
+5 verbose stack     at maybeClose (internal/child_process.js:852:16)
+5 verbose stack     at Socket.<anonymous> (internal/child_process.js:323:11)
+5 verbose stack     at emitOne (events.js:96:13)
+5 verbose stack     at Socket.emit (events.js:188:7)
+5 verbose stack     at Pipe._handle.close [as _onclose] (net.js:492:12)
+6 verbose cwd /home/rafael/Documents/Minor/chapter-numbering
+7 error Linux 4.4.8-040408-generic
+8 error argv "/usr/bin/nodejs" "/usr/bin/npm" "version" "patch"
+9 error node v6.4.0
+10 error npm  v3.10.3
+11 error Git working directory not clean.
+11 error D npm-debug.log
+11 error M numbering.js
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]

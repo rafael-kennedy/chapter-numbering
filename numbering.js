@@ -83,4 +83,41 @@ U.roman = function (num) {
   }
 }
 
+U.parse = {
+  alpha: function (str) {
+    str = str.split('').reverse()
+    var alph = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    var out = 0
+    for (var i = 0; i < str.length; i++) {
+      out += alph.indexOf(str[i].toUpperCase()) * Math.pow(26, i)
+    }
+    return out
+  },
+  roman: function (str) {
+    if (str !== str.toUpperCase()) {
+      str = str.toUpperCase()
+      var neg = true
+    }
+    var r = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
+    var a = [1, 5, 10, 50, 100, 500, 1000]
+    var lvl = 0
+    var out = 0
+    var neg = false
+    var mult = 1
+    str = str.split('').reverse()
+    for (var i = 0; i < str.length; i++) {
+      var c = str[i]
+      var cin = r.indexOf(c)
+      mult = (cin < lvl) ? -1 : 1
+      lvl = cin
+      out += (a[cin]) * mult
+    }
+    if (neg) {
+      return out * -1
+    } else {
+      return out
+    }
+  }
+}
+
 module.exports = U
