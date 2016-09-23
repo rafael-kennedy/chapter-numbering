@@ -1,4 +1,6 @@
 U = function (num, str) {
+  // num = number or array of values to convert
+  // str = string with format to output
   var re = /\#\{([AaRrIi\#1])\}/g
   var replacer = function (match, cg) {
     var n = num.shift()
