@@ -5,7 +5,7 @@
 Use for chapter and section numbering. Handles roman numerals (_Chapter IV_) or consecutive lettering (_Exhibit A_).
 
 ## Install
-
+Available as [npm package](https://www.npmjs.com/package/chapter-numbering)
 
 ```
 npm install chapter-numbering
